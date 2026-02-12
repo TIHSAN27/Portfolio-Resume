@@ -79,7 +79,7 @@
                 <span class="text-electric-blue text-xs font-bold uppercase tracking-widest">About Me</span>
                 <h2 class="text-4xl font-extrabold my-6 uppercase leading-tight">React APP  <span class="text-electric-blue">Developer</span></h2>
                 <p class="text-gray-400 text-lg mb-8 leading-relaxed">
-                    I'm a dedicated Computer Science graduate from the University of Management and Technology. Specializing in React web app development, I build high-performance applications that deliver exceptional user experiences. My expertise includes Redux state management, Supabase integration, real-time data synchronization, secure payment gateways, and RESTful API integration. From trading platforms to social media apps and digital wallets, I craft scalable web solutions with clean architecture and attention to detail.
+                    I'm a dedicated Computer Science graduate from the University of Management and Technology. Specializing in React web app development, I build high-performance applications that deliver exceptional user experiences. My expertise includes Redux state management, Firebase integration, real-time data synchronization, secure payment gateways, and RESTful API integration. From trading platforms to social media apps and digital wallets, I craft scalable web solutions with clean architecture and attention to detail.
                 </p>
                 <div class="grid grid-cols-2 gap-4">
                     <div class="bg-navy-dark border border-gray-800 p-4 rounded-xl text-center">
@@ -219,8 +219,19 @@
                     <img src="profile.png" class="w-32 h-32 rounded-2xl mb-8 border border-gray-700" alt="Profile">
                     <p class="text-xs font-bold text-gray-500 uppercase mb-1">Email</p>
                     <a href="mailto:taimoorahsan27@gmail.com" class="text-xl font-bold hover:text-electric-blue transition">taimoorahsan27@gmail.com</a>
-                    <p class="text-xs font-bold text-gray-500 uppercase mt-6 mb-1">Phone</p>
-                    <a href="tel:+923040911239" class="text-xl font-bold hover:text-electric-blue transition">+92-304-0911239</a>
+                    
+                    
+                    <div class="flex gap-4 mt-8">
+                        <a href="https://www.upwork.com/freelancers/~01dedc388fc4119c52?mp_source=share" target="_blank" class="w-12 h-12 bg-navy-dark border border-gray-800 rounded-full flex items-center justify-center text-white hover:bg-electric-blue hover:border-electric-blue transition-all" title="Upwork">
+                            <i class="fas fa-briefcase"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/muhammad-taimoor-ihsan-39623429a/" target="_blank" class="w-12 h-12 bg-navy-dark border border-gray-800 rounded-full flex items-center justify-center text-white hover:bg-electric-blue hover:border-electric-blue transition-all" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/TIHSAN27" target="_blank" class="w-12 h-12 bg-navy-dark border border-gray-800 rounded-full flex items-center justify-center text-white hover:bg-electric-blue hover:border-electric-blue transition-all" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
                 </div>
                 <div class="p-12 flex flex-col justify-center border-l border-gray-800">
                     <h2 class="text-4xl font-extrabold mb-6 uppercase leading-tight">Let's Build Your <span class="text-electric-blue underline">Web App</span></h2>
@@ -237,7 +248,8 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
     const words = ["Web App Developer", "MERN-Stack Developer", "React Developer"];
-        let i = 0, j = 0, currentWord = "", isDeleting = false;
+        let i = 0, j = 0, currentWord = "";
+        let isDeleting = false;
         function type() {
             currentWord = words[i];
             document.getElementById("typewriter").textContent = isDeleting ? currentWord.substring(0, j--) : currentWord.substring(0, j++);
